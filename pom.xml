@@ -8,17 +8,39 @@
     <artifactId>fresh-io</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <!--<organization>-->
+        <!--<name>Jspxcms</name>-->
+        <!--<url>http://www.jspxcms.com/</url>-->
+    <!--</organization>-->
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.5.4.RELEASE</version>
     </parent>
+
+    <properties>
+        <!-- druid阿里巴巴数据库连接池 -->
+        <druid.version>1.0.26</druid.version>
+
+        <mybatis-spring.version>1.2.2</mybatis-spring.version>
+
+        <mybatis.version>3.2.8</mybatis.version>
+
+        <mysql-connector.version>5.0.5</mysql-connector.version>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-freemarker</artifactId>
+        </dependency>
+
     </dependencies>
 
 </project>
